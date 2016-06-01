@@ -11,4 +11,9 @@ module.exports = {
     dest: 'build/css',
     prodSourceMap: false
   },
+
+  scripts: {
+    src: 'src/js/**/*.js',
+    dest: 'build/js'
+  }
 };
