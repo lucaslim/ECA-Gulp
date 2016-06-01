@@ -1,7 +1,5 @@
-(function() {
- var gulp = require('gulp');
+'use strict';
 
- gulp.task('default', function() {
+global.isProd = false;
 
- });
-})();
+require('./gulp');
