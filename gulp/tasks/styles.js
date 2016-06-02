@@ -6,11 +6,13 @@ var gulpif = require('gulp-if');
 
 var sourcemaps = require('gulp-sourcemaps');
 var stylus = require('gulp-stylus');
+
 var nib = require('nib');
+var bootstrap = require('bootstrap-styl');
 
 var handleErrors = require('../util/handleErrors');
 
-gulp.task('styles', function() {
+gulp.task('styles', function () {
   const createSourcemap = !global.isProd || config.styles.prodSourcemap;
 
   return gulp.src(config.styles.main)
@@ -19,7 +21,7 @@ gulp.task('styles', function() {
       include: config.nodeDir,
       'include css': true,
       compress: !global.isProd,
-      use: [nib()],
+      use: [nib(), bootstrap()],
     }))
     .on('error', handleErrors)
     .pipe(gulpif(createSourcemap, sourcemaps.write(global.isProd ? './' : null)))
