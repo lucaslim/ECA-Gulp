@@ -1,11 +1,10 @@
-'use strict';
+(function() {
 
-function() {
   var test = 'hello';
 
-if(test == 'hello') {
-  return true;
-}
+  if (test == 'hello') {
+    return true;
+  }
 
   console.log('hello');
-};
+})();
