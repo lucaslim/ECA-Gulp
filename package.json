@@ -13,11 +13,11 @@
     "gulp": "3.9.1",
     "gulp-if": "^2.0.1",
     "gulp-jscs": "^3.0.2",
+    "gulp-jscs-stylish": "^1.4.0",
     "gulp-jshint": "^2.0.1",
     "gulp-notify": "^2.2.0",
     "gulp-sourcemaps": "^1.6.0",
     "gulp-stylus": "^2.4.0",
-    "jscs-stylish": "^0.3.1",
     "jshint": "^2.9.2",
     "jshint-stylish": "^2.2.0",
     "path": "^0.12.7"
