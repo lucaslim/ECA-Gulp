@@ -15,10 +15,8 @@ gulp.task('jscs', function () {
      .pipe(jscsStylish());
 });
 
-gulp.task('lint', function () {
+gulp.task('lint', ['jscs'], function () {
     gulp.src(config.scripts.src)
         .pipe(jshint('.jshintrc'))
         .pipe(jshint.reporter('jshint-stylish'));
   });
-
-gulp.task('eslint', ['jscs', 'lint']);
