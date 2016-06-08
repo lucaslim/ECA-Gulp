@@ -26,6 +26,11 @@ module.exports = {
     src: 'src/**/*.html',
   },
 
+  images: {
+    src: ['src/images/**/*'],
+    dest: 'build/images',
+  },
+
   browserify: {
     bundleName: 'main.js',
     prodSourcemap: false,
